@@ -22,6 +22,8 @@ To run sqlmapgo, navigate to the directory where the `main.go` file is located a
 ```bash
 go run . -u <url>
 
+```
+
 Replace <url> with the target URL you want to scan for SQL injection vulnerabilities.
 Using a Request File
 
