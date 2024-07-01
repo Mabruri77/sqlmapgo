@@ -1,6 +1,6 @@
 # sqlmapgo
 
-sqlmapgo is a custom SQL injection and database takeover tool written in Go.
+sqlmapgo is a custom SQL injection and just Do detection using technique Time Based Blind
 
 ## Features
 
