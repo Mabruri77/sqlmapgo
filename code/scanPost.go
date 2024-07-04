@@ -2,10 +2,10 @@ package code
 
 import (
 	"fmt"
+	"net/url"
 	"os"
 	"strings"
 	"sync"
-	"time"
 )
 
 const (
@@ -41,7 +41,7 @@ func ScanPost() {
 		countUserAgent++
 		wg.Add(1)
 		payload = strings.ReplaceAll(payload, "5", "10")
-		// payload = url.QueryEscape(payload)
+		payload = url.QueryEscape(payload)
 		go func(keyValue, p string, countAgent int) {
 			defer wg.Done()
 			response, elapsedTime, err := makeHeaderBody(requestStringArr, p, dataUserAgents[countAgent%77], &mutex)
@@ -50,7 +50,7 @@ func ScanPost() {
 				return
 			}
 
-			if *elapsedTime > time.Second*10 {
+			if elapsedTime > 9 {
 				fmt.Printf("%s(%s) %s %s vulnerable%s\n", ColorGreen+TextBold, response.Status, p, keyValue, ColorReset)
 			} else {
 				fmt.Printf("%s (%s) failed!%s\n", ColorRed, response.Status, ColorReset)

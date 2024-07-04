@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-func makeHeaderBody(requestStringArr []string, payload string, userAgent string, mutex *sync.Mutex) (*http.Response, *time.Duration, error) {
+func makeHeaderBody(requestStringArr []string, payload string, userAgent string, mutex *sync.Mutex) (*http.Response, float64, error) {
 	isHttps := map[string]string{
 		"HTTP/1.1": "http://",
 		"HTTP/2":   "https://",
@@ -24,7 +24,7 @@ func makeHeaderBody(requestStringArr []string, payload string, userAgent string,
 	req, err := http.NewRequest(makeUrl[0], link, nil)
 
 	if err != nil {
-		return nil, nil, err
+		return nil, 0, err
 	}
 	for i := 2; i < len(requestStringArr); i++ {
 		if requestStringArr[i] == "" {
@@ -56,12 +56,12 @@ func makeHeaderBody(requestStringArr []string, payload string, userAgent string,
 	elapsedTime := time.Since(startTime)
 	mutex.Unlock()
 	if err != nil {
-		return nil, nil, err
+		return nil, 0, err
 	}
 	// respBody, err := io.ReadAll(resp.Body)
 	// if err != nil {
 	// 	return nil, &elapsedTime, nil
 	// }
 	// fmt.Println(string(respBody))
-	return resp, &elapsedTime, nil
+	return resp, elapsedTime.Seconds(), nil
 }

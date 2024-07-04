@@ -58,7 +58,7 @@ func ScanUrl() {
 				return
 			}
 			// Check response time for potential blind SQL injection (time-based)
-			if elapsedTime > time.Second*10 {
+			if elapsedTime.Seconds() > 9 {
 				fmt.Printf("%s(%s) %s %s vulnerable%s\n", ColorGreen+TextBold, resp.Status, p, keyValue, ColorReset)
 			} else {
 				fmt.Printf("%s(%s) failed!%s\n", ColorRed, resp.Status, ColorReset)
