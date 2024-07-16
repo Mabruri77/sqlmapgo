@@ -29,18 +29,18 @@ func ScanUrl() {
 
 	// Wait group to synchronize goroutines
 	var wg sync.WaitGroup
-	var mutex sync.Mutex
 
 	// Iterate over each payload
 	for key, payload := range payloads {
 		wg.Add(1) // Increment the wait group counter
-		payload = strings.ReplaceAll(payload, "5", "10")
-		payload = url.QueryEscape(payload)
+
 		countUserAgent++
-		go func(keyValue, p, url string, userAgentIndex int) {
+		go func(keyValue, p, target string, userAgentIndex int) {
 			defer wg.Done() // Decrement the wait group counter when the goroutine finishes
+			p = strings.ReplaceAll(p, "5", "10")
+			p = url.QueryEscape(p)
 			// Send HTTP request with payload
-			newUrl := strings.ReplaceAll(url, "*", p)
+			newUrl := strings.ReplaceAll(target, "*", p)
 			req, err := http.NewRequest("GET", newUrl, nil)
 			req.Header.Set("User-Agent", dataUserAgents[userAgentIndex%77])
 			if err != nil {
@@ -48,18 +48,27 @@ func ScanUrl() {
 				return
 			}
 			client := &http.Client{}
-			mutex.Lock()
 			startTime := time.Now()
 			resp, err := client.Do(req)
 			elapsedTime := time.Since(startTime)
-			mutex.Unlock()
 			if err != nil {
 				fmt.Println("Error Send Request")
 				return
 			}
 			// Check response time for potential blind SQL injection (time-based)
 			if elapsedTime.Seconds() > 9 {
-				fmt.Printf("%s(%s) %s %s vulnerable%s\n", ColorGreen+TextBold, resp.Status, p, keyValue, ColorReset)
+				startTime = time.Now()
+				resp, err = client.Do(req)
+				elapsedTime = time.Since(startTime)
+				if err != nil {
+					fmt.Println("Error Send Request")
+					return
+				}
+				if elapsedTime.Seconds() > 9 {
+					fmt.Printf("%s(%s) %s %s vulnerable%s\n", ColorGreen+TextBold, resp.Status, p, keyValue, ColorReset)
+				} else {
+					fmt.Printf("%s(%s) failed!%s\n", ColorRed, resp.Status, ColorReset)
+				}
 			} else {
 				fmt.Printf("%s(%s) failed!%s\n", ColorRed, resp.Status, ColorReset)
 			}

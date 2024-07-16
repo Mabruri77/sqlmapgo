@@ -3,11 +3,10 @@ package code
 import (
 	"net/http"
 	"strings"
-	"sync"
 	"time"
 )
 
-func makeHeaderBody(requestStringArr []string, payload string, userAgent string, mutex *sync.Mutex) (*http.Response, float64, error) {
+func makeHeaderBody(requestStringArr []string, payload string, userAgent string) (*http.Response, float64, error) {
 	isHttps := map[string]string{
 		"HTTP/1.1": "http://",
 		"HTTP/2":   "https://",
@@ -50,11 +49,10 @@ func makeHeaderBody(requestStringArr []string, payload string, userAgent string,
 	req.Header.Del("Accept-Encoding")
 
 	client := &http.Client{}
-	mutex.Lock()
 	startTime := time.Now()
 	resp, err := client.Do(req)
 	elapsedTime := time.Since(startTime)
-	mutex.Unlock()
+
 	if err != nil {
 		return nil, 0, err
 	}

@@ -36,22 +36,32 @@ func ScanPost() {
 	requestStringArr := strings.Split(string(content), "\n")
 
 	var wg sync.WaitGroup
-	var mutex sync.Mutex
+	// var mutex sync.Mutex
 	for key, payload := range payloads {
 		countUserAgent++
 		wg.Add(1)
-		payload = strings.ReplaceAll(payload, "5", "10")
-		payload = url.QueryEscape(payload)
 		go func(keyValue, p string, countAgent int) {
 			defer wg.Done()
-			response, elapsedTime, err := makeHeaderBody(requestStringArr, p, dataUserAgents[countAgent%77], &mutex)
+			p = strings.ReplaceAll(p, "5", "10")
+			p = url.QueryEscape(p)
+			response, elapsedTime, err := makeHeaderBody(requestStringArr, p, dataUserAgents[countAgent%77])
 			if err != nil {
 				fmt.Println("Error sending HTTP request")
 				return
 			}
 
 			if elapsedTime > 9 {
-				fmt.Printf("%s(%s) %s %s vulnerable%s\n", ColorGreen+TextBold, response.Status, p, keyValue, ColorReset)
+				response, elapsedTime, err = makeHeaderBody(requestStringArr, p, dataUserAgents[countAgent%77])
+				if err != nil {
+					fmt.Println("Error sending HTTP request")
+					return
+				}
+				if elapsedTime > 9 {
+					fmt.Printf("%s(%s) %s %s vulnerable%s\n", ColorGreen+TextBold, response.Status, p, keyValue, ColorReset)
+				} else {
+					fmt.Printf("%s (%s) failed!%s\n", ColorRed, response.Status, ColorReset)
+				}
+
 			} else {
 				fmt.Printf("%s (%s) failed!%s\n", ColorRed, response.Status, ColorReset)
 			}
