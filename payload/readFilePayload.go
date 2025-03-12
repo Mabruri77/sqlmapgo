@@ -1,4 +1,4 @@
-package code
+package payload
 
 import (
 	"bufio"
@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-func readPayloadsFromFile() (map[string]string, error) {
+func ReadPayloadsFromFile() (map[string]string, error) {
 	// Open the file
 	namePayloadArr := []string{"mysql", "postgresql", "oracle", "mssql"}
 	payloads := make(map[string]string)

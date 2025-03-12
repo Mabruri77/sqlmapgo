@@ -1,6 +1,7 @@
 package code
 
 import (
+	"MySqlMap/payload"
 	"fmt"
 	"net/http"
 	"net/url"
@@ -21,17 +22,18 @@ func ScanUrl() {
 	dataUserAgents := DataUserAgent()
 	countUserAgent := -1
 	// Read payloads from file
-	payloads, err := readPayloadsFromFile()
-	if err != nil {
-		fmt.Println("Error reading payloads from file:", err)
-		return
-	}
+	payloads := payload.Read("./payload/mysql")
+	// if err != nil {
+	// 	fmt.Println("Error reading payloads from file:", err)
+	// 	return
+	// }
 
 	// Wait group to synchronize goroutines
 	var wg sync.WaitGroup
 
 	// Iterate over each payload
-	for key, payload := range payloads {
+	for _, node := range payloads {
+		key, payload := node.Name, node.Payload
 		wg.Add(1) // Increment the wait group counter
 
 		countUserAgent++
@@ -50,25 +52,16 @@ func ScanUrl() {
 			client := &http.Client{}
 			startTime := time.Now()
 			resp, err := client.Do(req)
-			elapsedTime := time.Since(startTime)
+			endTime := time.Now()
 			if err != nil {
 				fmt.Println("Error Send Request")
 				return
 			}
 			// Check response time for potential blind SQL injection (time-based)
-			if elapsedTime.Seconds() > 9 {
-				startTime = time.Now()
-				resp, err = client.Do(req)
-				elapsedTime = time.Since(startTime)
-				if err != nil {
-					fmt.Println("Error Send Request")
-					return
-				}
-				if elapsedTime.Seconds() > 9 {
-					fmt.Printf("%s(%s) %s %s vulnerable%s\n", ColorGreen+TextBold, resp.Status, p, keyValue, ColorReset)
-				} else {
-					fmt.Printf("%s(%s) failed!%s\n", ColorRed, resp.Status, ColorReset)
-				}
+			elapsedTime := endTime.Sub(startTime)
+			if elapsedTime >= time.Duration(9)*time.Second {
+				fmt.Printf("%s(%s) %s %s vulnerable%s\n", ColorGreen+TextBold, resp.Status, p, keyValue, ColorReset)
+
 			} else {
 				fmt.Printf("%s(%s) failed!%s\n", ColorRed, resp.Status, ColorReset)
 			}

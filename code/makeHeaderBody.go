@@ -3,10 +3,9 @@ package code
 import (
 	"net/http"
 	"strings"
-	"time"
 )
 
-func makeHeaderBody(requestStringArr []string, payload string, userAgent string) (*http.Response, float64, error) {
+func makeHeaderBody(requestStringArr []string, payload string, userAgent string) (*http.Response, error) {
 	isHttps := map[string]string{
 		"HTTP/1.1": "http://",
 		"HTTP/2":   "https://",
@@ -23,7 +22,7 @@ func makeHeaderBody(requestStringArr []string, payload string, userAgent string)
 	req, err := http.NewRequest(makeUrl[0], link, nil)
 
 	if err != nil {
-		return nil, 0, err
+		return nil, err
 	}
 	for i := 2; i < len(requestStringArr); i++ {
 		if requestStringArr[i] == "" {
@@ -49,17 +48,15 @@ func makeHeaderBody(requestStringArr []string, payload string, userAgent string)
 	req.Header.Del("Accept-Encoding")
 
 	client := &http.Client{}
-	startTime := time.Now()
 	resp, err := client.Do(req)
-	elapsedTime := time.Since(startTime)
 
 	if err != nil {
-		return nil, 0, err
+		return nil, err
 	}
 	// respBody, err := io.ReadAll(resp.Body)
 	// if err != nil {
 	// 	return nil, &elapsedTime, nil
 	// }
 	// fmt.Println(string(respBody))
-	return resp, elapsedTime.Seconds(), nil
+	return resp, nil
 }

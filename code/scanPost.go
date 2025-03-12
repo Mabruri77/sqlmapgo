@@ -1,11 +1,13 @@
 package code
 
 import (
+	"MySqlMap/payload"
 	"fmt"
 	"net/url"
 	"os"
 	"strings"
 	"sync"
+	"time"
 )
 
 const (
@@ -23,11 +25,7 @@ func ScanPost() {
 	}
 	dataUserAgents := DataUserAgent()
 	countUserAgent := -1
-	payloads, err := readPayloadsFromFile()
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
+	payloads := payload.Read("./payload/mysql")
 	content, err := os.ReadFile(os.Args[2])
 	if err != nil {
 		fmt.Println(err)
@@ -37,30 +35,25 @@ func ScanPost() {
 
 	var wg sync.WaitGroup
 	// var mutex sync.Mutex
-	for key, payload := range payloads {
+	for _, node := range payloads {
+		key, payload := node.Name, node.Payload
 		countUserAgent++
 		wg.Add(1)
 		go func(keyValue, p string, countAgent int) {
 			defer wg.Done()
 			p = strings.ReplaceAll(p, "5", "10")
 			p = url.QueryEscape(p)
-			response, elapsedTime, err := makeHeaderBody(requestStringArr, p, dataUserAgents[countAgent%77])
+			startTime := time.Now()
+			response, err := makeHeaderBody(requestStringArr, p, dataUserAgents[countAgent%77])
+			endTime := time.Now()
+			elapsedTime := endTime.Sub(startTime)
 			if err != nil {
 				fmt.Println("Error sending HTTP request")
 				return
 			}
 
-			if elapsedTime > 9 {
-				response, elapsedTime, err = makeHeaderBody(requestStringArr, p, dataUserAgents[countAgent%77])
-				if err != nil {
-					fmt.Println("Error sending HTTP request")
-					return
-				}
-				if elapsedTime > 9 {
-					fmt.Printf("%s(%s) %s %s vulnerable%s\n", ColorGreen+TextBold, response.Status, p, keyValue, ColorReset)
-				} else {
-					fmt.Printf("%s (%s) failed!%s\n", ColorRed, response.Status, ColorReset)
-				}
+			if elapsedTime > time.Duration(9)*time.Second {
+				fmt.Printf("%s(%s) %s %s vulnerable%s\n", ColorGreen+TextBold, response.Status, p, keyValue, ColorReset)
 
 			} else {
 				fmt.Printf("%s (%s) failed!%s\n", ColorRed, response.Status, ColorReset)

