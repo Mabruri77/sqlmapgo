@@ -42,7 +42,7 @@ Example
 
 bash
 
-go run . -u "https://example.com/page?id=1"
+go run . -u "https://example.com/page?id=1*"
 
 or
 
