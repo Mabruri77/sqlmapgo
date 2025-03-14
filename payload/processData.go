@@ -1,6 +1,7 @@
 package payload
 
 import (
+	"bufio"
 	"encoding/json"
 	"fmt"
 	"io"
@@ -13,6 +14,20 @@ type Data struct {
 	Payload string `json:"payload"`
 }
 
+func ConvertTextToJson(nameFile string) {
+	file, err := os.Open(nameFile + ".txt")
+	if err != nil {
+		log.Fatalf("Error creating file: %v", err)
+	}
+	defer file.Close()
+	scanner := bufio.NewScanner(file)
+	arr := []Data{}
+	for scanner.Scan() {
+		payload := scanner.Text()
+		arr = append(arr, Data{Name: nameFile, Payload: payload})
+	}
+	CreateFile(arr, "payload/"+nameFile)
+}
 func Create() {
 	mysql := Read("payload/mysql")
 	mssql := Read("payload/mssql")
@@ -54,7 +69,7 @@ func CreateFile(data []Data, nameFile string) {
 		log.Fatalf("Error encoding JSON: %v", err)
 	}
 
-	fmt.Println("JSON written to people.json successfully.")
+	fmt.Printf("JSON written to %v successfully.\n", nameFile+".json")
 }
 
 func Push(newData Data) {

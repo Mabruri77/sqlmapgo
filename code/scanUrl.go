@@ -22,7 +22,7 @@ func ScanUrl() {
 	dataUserAgents := DataUserAgent()
 	countUserAgent := -1
 	// Read payloads from file
-	payloads := payload.Read("./payload/mysql")
+	payloads := payload.Read("./payload/postgresql")
 	// if err != nil {
 	// 	fmt.Println("Error reading payloads from file:", err)
 	// 	return
